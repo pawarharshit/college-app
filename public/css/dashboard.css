@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    
+}
+#dashboard-menu{
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    /* border-right: 1px solid rgb(243, 236, 236); */
+    padding: 0;
+    background-color: #1e2d35;
+}
+#dashboard-menu h3{
+    padding: 40px 5px;
+    text-align: center;
+    color:#30719c;
+}
+
+#dashboard-menu ul li{
+    padding: 20px;
+    list-style: none;
+}
+#dashboard-menu ul li a{
+    text-decoration: none;
+    color: #bbe1fa;
+}
+#dashboard-menu ul li i{
+    font-size: 20px;
+    padding-right:40px;
+    padding-left: 20px;
+}
+#dashboard-menu ul li a:hover{
+    margin-left: 10px;
+    color: #3282b8;
+    transition: all .5s ease;
+   
+}
+#dashboard-menu ul li:hover{
+    margin-right: 0px;
+    border-right: 2px solid #3282b8;
+    border-radius: 1px;
+    background-color: #293e4b;
+    
+}
+#createdBy{
+    margin:10px;
+    height: 150px;
+    background-color: gray;
+}
+#right-part{
+    position: absolute;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 100vh;
+    padding: 0;
+}
+.dashboard-container{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 0;
+    padding: 0;
+    background-color:#1b262c;
+    display: block;
+    /* overflow-y: scroll; */
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    padding: 0;
+    background-color:#1b262c;
+    color: white;
+}
+.content-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    text-align: center;
+}
+.content-nav .content-name{
+    font-size: 20px;
+}
+#date{
+    margin-right: 20px;
+}
+#search{
+    background-color: #293e4b;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#userShrinkProfile{
+    width: 40px;
+    margin-left: 10px;
+    display: none;
+}
+.content .intro{
+    padding:10px 45px;
+    width: 100%;
+    height: 200px;
+    
+}
+.intro .intro-content{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color:#293e4b;
+    
+}
+.user-intro{
+    padding:30px 60px;
+    justify-content: center;
+}
+.user-intro h3{
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: #f7ad92;
+}
+.user-intro h6{
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+}
+.user-data{
+    width: 100%;
+    height: 300px;
+    padding:10px 45px;
+}
+.schedule-card{
+    margin-top: 10px;
+    height: 300px;
+}
+.schedule{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color:#293e4b;
+}
+.schedule .time-table{
+    height: 100%;
+    /* background-color: red; */
+    padding-left: 15px; 
+    padding-top: 2px;
+    /* border-bottom: 1px solid white; */
+}
+.schedule div h6{
+    height: 10%;
+    align-self: flex-start;
+    margin-top: 10px;
+    /* background-color: red; */
+    color: white;
+}
+
+.schedule div .classes{
+    height: 80%;
+    width: 95%;
+    margin-right: 3px;
+    /* background-color: gold; */
+    overflow-y: scroll;
+}
+.schedule div .classes .class{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    border-bottom: 1px solid white;
+    /* background-color: green; */
+}
+
+.subject-attendance-card{
+    margin-top: 10px;
+    height: 300px;
+}
+.subject-attendance{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color:#293e4b;
+}
+.subject-attendance .attendance-table{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+.subject-attendance .attendance-table .heading{
+    /* background-color: gold; */
+    width: 90%;
+    height: 8%;
+}
+.subject-attendance .attendance-table .graph{
+    /* background-color: aqua; */
+    width: 90%;
+    height: 75%;
+}
+.subject-attendance .attendance-table .graph .sub{
+    /* background-color: green; */
+    width: 20%;
+    height: 100%;
+}
+
+.subject-attendance .attendance-table .graph .sub .bar{
+    width: 3px;
+    height: 80%;
+    background-color: white;
+}
+
+.subject-attendance .attendance-table .notations{
+    /* background-color: greenyellow; */
+    width: 90%;
+    height: 10%;
+}
+#profile{
+    position: absolute;
+    left: 70%;
+    width: 30%;
+    height: 100vh;
+    padding: 0;
+    background-color: #1e2d35;
+    color: #30719c;
+}
+.logout{
+    display: flex;
+    padding:45px 50px;
+    justify-content: space-between;
+}
+.logout h5{
+    text-align: center;
+}
+.logout i{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color:white;
+    background-color: #293e4b;
+}
+.profile-photo{
+    border-radius: 50%;
+    width: 100%;
+    text-align: center;
+}
+.profile-photo img{
+    width: 180px;
+}
+.short-subject-card{
+    padding:10px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #293e4b;
+    display: flex;
+}
+.subject-code{
+    padding:10px 5px;
+    background-color: #1e2d35;
+    border-radius: 20%;
+    color: white;
+}
+.subject-info{
+    padding: 0 10px;
+}
+#subject-name{
+    padding-bottom: 0;
+}
+#subject-techer-name{
+    font-size: 10px;
+}
+@media(max-width:1224px){
+    #profile{
+        display: none;
+    }
+    #userShrinkProfile{
+        display: inline;
+    }
+    .dashboard-container{
+        width: 100%;
+    }
+}
+@media(max-width:800px){
+    #intro-image{
+        display: none;
+    }
+    .user-intro{
+        padding:20px;
+        text-align: left;
+    }
+}

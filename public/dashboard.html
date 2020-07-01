@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>College_App</title>
+</head>
+
+<style>
+  .present{
+    width: 100%;
+    height: 50%;
+    background-color: green;
+  }
+</style>
+
+<body>
+    <div class="container-fluid" id="main-content">
+      <!-- dashboard-menu -->
+      <div class="container-fluid" id="dashboard-menu">
+        <h3>College Website</h3>
+        <ul>
+          <li><a href="#"><i class="fas fa-th-large"></i></i>Dashboard</a></li>
+          <li><a href="#"><i class="fas fa-calendar-day"></i>Today's Schedule</a></li>
+          <li><a href="#"><i class="fas fa-clipboard-list"></i>Timetable</a></li>
+          <li><a href="#"><i class="fas fa-book"></i>Subjects</a></li>
+          <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+          <li><a href="#"><i class="fas fa-bell"></i>Notification</a></li>
+        </ul>
+        <div id="createdBy">
+
+        </div>
+      </div>
+
+      <!-- right side of the dashboard-->
+      <div class="container-fluid" id="right-part">
+
+          <!-- middle-content-->
+
+          <!--Dashboard-container-->
+          <div class="dashboard-container">
+            <!--Dashboard-->
+            <div class="container-fluid content">
+              <div class="content-nav">
+                <span class="content-name">Dashboard</span>
+                <div class="date-search">
+                  <span id="date">1 July 2020, Friday</span>
+                  <i id ="search"class="fas fa-search"></i>
+                  <img  id="userShrinkProfile"src="css/images/profile_image.png" alt="Avatar">
+                </div>
+              </div>
+
+              <!--Welcome message for the users-->
+              <div class="intro">
+                <div class="intro-content">
+                  <img  id="intro-image"src="css/images/intro-image.png" style=" height:250px; margin-top: -70px; float: right;">
+                  <div class="user-intro">
+                    <h3>Welcome back Rahul!</h3>
+                    <h6>You've learned 80% of your goal this week!</h6>
+                    <h6>Keep it up adn inprove your result!</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!--User Today's Schedule-->
+              <div class="user-data">
+                <div class="row">
+                  <div class="col-md-5 schedule-card">
+                    <div class="schedule">
+                      <div class="d-flex flex-column align-items-center time-table">
+                        <h6>Todays Classes</h6>
+                        <div class="d-flex flex-column  classes">
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+                            <div class="class">
+                              <span>OOPs</span>
+                              <span>time</span>
+                            </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-md-7 subject-attendance-card">
+                    <div class="subject-attendance">
+                      <div class="d-flex flex-column align-items-center justify-content-center attendance-table">
+                        <div class="heading">
+                          Attendance Graph
+                        </div>
+                        <div class="graph d-flex justify-content-around">
+                          <div class="sub d-flex flex-column justify-content-around align-items-center">AE
+                            <div class="bar">
+                              <div class="remain"></div>
+                              <div class="cancel"></div>
+                              <div class="absent"></div>
+                              <div class="present"></div>
+                            </div>
+                          </div>
+                          <div class="sub d-flex flex-column justify-content-around align-items-center">OOPs
+                            <div class="bar"></div>
+                          </div>
+                          <div class="sub d-flex flex-column justify-content-around align-items-center">CSE
+                            <div class="bar"></div>
+                          </div>
+                          <div class="sub d-flex flex-column justify-content-around align-items-center">COA
+                            <div class="bar"></div>
+                          </div>
+                          <div class="sub d-flex flex-column justify-content-around align-items-center">MATH
+                            <div class="bar"></div>
+                          </div>
+                          
+                        </div>
+                        <div class="notations"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--scrolling -->
+              <!-- <div class="container" style="height: 500px; width: 100%;"></div> -->
+            </div>
+
+            <!--Menu Today's Schedule-->
+            <div class="menu-schedule">
+              <div class="container-fluid content">
+                <div class="content-nav">
+                  <span class="content-name">Today's Schedule</span>
+                  <div class="date-search">
+                    <span id="date">1 July 2020, Friday</span>
+                    <i id ="search"class="fas fa-search"></i>
+                    <img  id="userShrinkProfile"src="css/images/profile_image.png" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Menu Timetable-->
+            <div class="menu-schedule">
+              <div class="container-fluid content">
+                <div class="content-nav">
+                  <span class="content-name">TimeTable</span>
+                  <div class="date-search">
+                    <span id="date">1 July 2020, Friday</span>
+                    <i id ="search"class="fas fa-search"></i>
+                    <img  id="userShrinkProfile"src="css/images/profile_image.png" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Menu Subjects-->
+            <div class="menu-schedule">
+              <div class="container-fluid content">
+                <div class="content-nav">
+                  <span class="content-name">Subjects</span>
+                  <div class="date-search">
+                    <span id="date">1 July 2020, Friday</span>
+                    <i id ="search"class="fas fa-search"></i>
+                    <img  id="userShrinkProfile"src="css/images/profile_image.png" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Menu Events-->
+            <div class="menu-schedule">
+              <div class="container-fluid content">
+                <div class="content-nav">
+                  <span class="content-name">Events</span>
+                  <div class="date-search">
+                    <span id="date">1 July 2020, Friday</span>
+                    <i id ="search"class="fas fa-search"></i>
+                    <img  id="userShrinkProfile"src="css/images/profile_image.png" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Menu notification-->
+            <div class="menu-schedule">
+              <div class="container-fluid content">
+                <div class="content-nav">
+                  <span class="content-name">Notification</span>
+                  <div class="date-search">
+                    <span id="date">1 July 2020, Friday</span>
+                    <i id ="search"class="fas fa-search"></i>
+                    <img  id="userShrinkProfile"src="css/images/profile_image.png" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- user profile -->
+          <div class="container-fluid" id="profile">
+            <div class="logout text-center">
+              <h5>Logout</h5>
+              <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            <div class="profile-photo">
+              <img  id="userPhoto"src="css/images/profile_image.png" alt="Avatar">
+            </div>
+            <h5 class="text-center" style="margin-top: 10px; font-weight: bold;">Rahul Yadav</h5>
+            <h6 class="text-center" style="margin-top: 0px;">Student</h6>
+            <div class="short-subject-card">
+              <div class="subject-code">
+                <span>EC-303</span>
+              </div>
+              <div class="subject-info">
+                <span id="subject-name">Subject Name</span><br>
+                <span id="subject-techer-name">Techer Name</span>
+              </div>
+              <div class="progress-bar">
+
+              </div>
+            </div>
+            <div class="short-subject-card">
+              <div class="subject-code">
+                <span>EC-303</span>
+              </div>
+              <div class="subject-info">
+                <span id="subject-name">Subject Name</span><br>
+                <span id="subject-techer-name">Techer Name</span>
+              </div>
+              <div class="progress-bar">
+
+              </div>
+            </div>
+          </div>
+      </div>  
+      
+
+    </div>
+</body>
+
+</html>
